@@ -5,3 +5,6 @@ hero layer=50
 
 영웅 - 자기보다 큰 원 콜리젼
 >>몬스터도 콜리젼인가?? 내일 물어볼 것, 리지드바디도
+몬스터 태그 = 몬스터콜리젼, 설정해놓음
+레이어 설정 - ground grass monster hero cursor
+

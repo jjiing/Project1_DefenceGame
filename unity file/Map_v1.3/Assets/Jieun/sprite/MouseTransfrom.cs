@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class MouseTransfrom : MonoBehaviour
 {
-    public HeroMovement hero; 
-    float heroSpeed = 1.5f;    //영웅이동 속도
-    Vector3 cursorPos;
+    public HeroMovement heroMoveScript; 
+    public Vector3 cursorPos;
 
     private void Start()
     {
-        hero.heroDestPos = transform.position;      //목적지 벡터값 초기화(안해주면 시작과 동시에 첫 위치로 움직임)
+        heroMoveScript.heroDestPos = transform.position;      //목적지 벡터값 초기화(안해주면 시작과 동시에 첫 위치로 움직임)
     }
 
     void Update()
@@ -24,10 +23,10 @@ public class MouseTransfrom : MonoBehaviour
         //world좌표로 입력, 마우스 커서 위치
 
         if (Input.GetMouseButtonDown(1))
-            hero.heroDestPos = new Vector3(cursorPos.x, cursorPos.y, 0);
+            heroMoveScript.heroDestPos = new Vector3(cursorPos.x, cursorPos.y, 0);
         //목적지 위치에 커서 위치 넣기
 
-        transform.position = hero.heroDestPos;      
+        transform.position = heroMoveScript.heroDestPos;      
     }
 
 
@@ -36,7 +35,7 @@ public class MouseTransfrom : MonoBehaviour
         if(collision.tag == "Clickable")
         {
             if (Input.GetMouseButton(1))
-                 hero.isHeroMove = true; 
+                 heroMoveScript.isHeroMove = true; 
         }
     }
 }

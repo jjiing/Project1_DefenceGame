@@ -56,9 +56,10 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Jieun\sprite\MouseTransfrom.cs" />
-    <Compile Include="Assets\Jieun\sprite\HeroMovement.cs" />
     <Compile Include="Assets\Jieun\sprite\HeroAttack.cs" />
+    <Compile Include="Assets\Jieun\sprite\HeroMovement.cs" />
+    <Compile Include="Assets\Jieun\sprite\MouseTransfrom.cs" />
+    <Compile Include="Assets\Jieun\sprite\Monster.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
