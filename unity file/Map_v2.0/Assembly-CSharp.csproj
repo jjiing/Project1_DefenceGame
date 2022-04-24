@@ -57,12 +57,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\hero\Monster.cs" />
+    <Compile Include="Assets\hero\warrior\script\ObjectPool.cs" />
     <Compile Include="Assets\hero\warrior\script\WarriorAttackBasic.cs" />
     <Compile Include="Assets\hero\warrior\script\Warrior.cs" />
     <Compile Include="Assets\hero\warrior\script\WarriorSkill.cs" />
     <Compile Include="Assets\hero\HeroMovement.cs" />
     <Compile Include="Assets\hero\warrior\script\knight.cs" />
-    <Compile Include="Assets\hero\warrior\script\ObjectPool.cs" />
+    <Compile Include="Assets\hero\warrior\script\skill4.cs" />
+    <Compile Include="Assets\hero\warrior\script\GameManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

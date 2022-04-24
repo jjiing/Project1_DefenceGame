@@ -10,6 +10,9 @@ public class WarriorSkill : Warrior
 
     public knight knight;
     knight knight1, knight2, knight3;
+
+    public GameObject skill4;
+
     private void Start()
     {
        
@@ -17,7 +20,36 @@ public class WarriorSkill : Warrior
     void Update()
     {
         WarriorSkillSet();
+        WarriorSkillUpgrade();
     }
+
+    void WarriorSkillUpgrade() //수정 및 테스트 필요
+    {
+        ////다이아 차감 조건 및 최대 레벨 조건 달기 - 최대 레벨 설정 해야함
+        ////gameManager.Diamond -=50;     //다이아 차감
+
+        //if (Input.GetKey(KeyCode.O))     
+        //{
+        //    knight.buffPercent += 0.1f;
+        //}
+        //if (Input.GetKey(KeyCode.I))     
+        //{
+        //    warriorHPup += 10;
+        //}
+        //if (Input.GetKey(KeyCode.U))     
+        //{
+        //    knight.KnightHPmax = (int)((double)knight.knightHPmax * 1.1);
+        //    knight.KnightAtk = (int)((double)knight.knightAtk * 1.1);
+        //}
+        //if (Input.GetKey(KeyCode.Y))     
+        //{
+        //    //궁극기 데미지 UP
+        //}
+
+
+    }
+
+
     void WarriorSkillSet()     //스킬1~4
     {
 
@@ -81,7 +113,7 @@ public class WarriorSkill : Warrior
     }
 
 
-
+    
 
     void WarriorSkill2()
     {
@@ -104,7 +136,8 @@ public class WarriorSkill : Warrior
     }
     void WarriorSkill4()
     {
-        //궁극기 - 광역딜
+        //skill4.SetActive(true);
+
     }
 
 

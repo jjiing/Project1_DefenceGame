@@ -69,6 +69,11 @@ public class knight : MonoBehaviour
             knightAtk = value;
         }
     }
+    public int KnightHPmax
+    {
+        get { return knightHPmax; }
+        set { knightHPmax = value; }
+    }
     private void DestroyKnight()
     {
         ObjectPool.ReturnObject(this);
@@ -172,11 +177,6 @@ public class knight : MonoBehaviour
         knightSpeed = 1.5f;    //속도 초기화
     }
 
-    IEnumerator DestoryCo()
-    {
-        yield return new WaitForSeconds(3f);
-        Destroy(gameObject);
-    }
 
 
     void WarriorAttackAni()

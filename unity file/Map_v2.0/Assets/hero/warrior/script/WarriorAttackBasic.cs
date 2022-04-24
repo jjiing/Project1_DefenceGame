@@ -109,7 +109,7 @@ public class WarriorAttackBasic : Warrior
             isAttack = true;
             Debug.Log("공격 1회");
             //animator.SetTrigger("Attack");
-            targetMonster.GetComponent<Monster>().monterHP -= Atk;
+            targetMonster.GetComponent<Monster>().monterHP -= Atk;    //Atk
             Debug.Log("몬스터 체력" + targetMonster.GetComponent<Monster>().monterHP);
             
             if (targetMonster.GetComponent<Monster>().monterHP <= 0)
