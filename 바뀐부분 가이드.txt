@@ -1,0 +1,28 @@
+고지은 
+크게 바뀐 부분
+
+1.
+게임매니저 : static이기 때문에 public 통한 참조 없이도 그냥 GameManager.instance.로 참조 가능
+따라서 게임매니저와 스킬매니저를 어디서든 참조 할 수있게 해놓음.
+그래서 게임매니저 참조했던 부분들 다  gameManager. -> GameManager.instance.로 변경(스킬매니저도 마찬가지)
+(단, 특정한 참조없음 오류 5개가 뜨는데 왜그런지는 모르겠고 시작화면부터 실행하면 오류 안뜸)
+
+2.
+스테이지 병사 info에 있는 공격력, 체력, 이동속도, 레벨 + 해당 프로퍼티도 그냥 게임매니저로 옮겨둬서 아무데서나 접근 가능하게 함 (역시 다른스크립트에 있는 war. 참조 다 변경)
+
+3.UI
+using UnityEngine.UI; 돼있는 스크립트들은 다 유아이 연결있는 스크립트.
+변수 public으로 선언 후 lateUpdate에서 정의.
++ 인스펙터 창에 해당하는 텍스트 및 슬라이더 다 끌어두어야 함
+
+4. 이외에 짜잘짜잘한 코드변경 있을수도...
++ 낮에 올려준 변경내용 : knight script 수정(invoke ->코루틴)
+private void OnEnable()
+    {
+        StartCoroutine(KinghtDestoryTime());
+    }
+IEnumerator KinghtDestoryTime()
+    {
+        yield return new WaitForSeconds(12);
+        ObjectPool.ReturnObject(this);
+    }
