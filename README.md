@@ -21,6 +21,6 @@
 </br></br>
 ## 🔗 파일 및 링크
 + [개발일지](https://jjing-log.tistory.com/45)
-+ [최종 결과물 영상](https://www.youtube.com/watch?v=DPpRPwyzwVI)
++ [최종 결과물 영상](https://www.youtube.com/watch?v=QRUf-thZ0yw)
 
 </br></br>
